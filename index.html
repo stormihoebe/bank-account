@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Movie Theater</title>
+    <title>Bank Account</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.1.js"></script>
@@ -17,7 +17,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <div class="panel panel-default">
+          <div class="panel panel-warning">
             <div class="panel-heading">
               <h3 class="panel-title">Create Account</h3>
             </div>
@@ -37,19 +37,19 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="panel panel-default">
+          <div class="panel panel-warning">
             <div class="panel-heading">
               <h3 class="panel-title">Manage Account</h3>
             </div>
             <div class="panel-body">
-              <form id="createAccount">
+              <form id="depositWithdrawal">
                 <div class="form-group">
                   <label for="deposit">Deposit Amount</label>
                   <input type="number" name="deposit" id="deposit" class="form-control">
                 </div>
                 <div class="form-group">
-                  <label for="withdrawal">Withdraw</label>
-                  <input type="number" name="withdraw" id="withdraw" class="form-control">
+                  <label for="withdrawal">Withdrawal Amount</label>
+                  <input type="number" name="withdrawal" id="withdrawal" class="form-control">
                 </div>
                 <button type="submit" name="button" class="btn btn-warning">submit</button>
               </form>
@@ -57,15 +57,15 @@
           </div>
         </div>
       </div><!--row-->
-      <div class="row">
+      <div class="row balancerow">
         <div class="col-md-12">
-          <div class="panel panel-default">
+          <div class="panel panel-warning">
             <div class="panel-heading">
-              <h3 class="panel-title">Balance</h3>
+              <h3 class="panel-title"><span id="accountHolder"></span> Account Balance</h3>
             </div>
             <div class="panel-body">
-              <div id= "currentBalance">
-
+              <div>
+                <h3>$ <span id= "currentBalance"></span></h3>
               </div>
             </div>
           </div>

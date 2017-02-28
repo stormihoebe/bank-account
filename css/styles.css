@@ -1,0 +1,18 @@
+.jumbotron {
+	text-align: center;
+	color: white;
+	background-color: #F89406;
+}
+.btn-warning {
+	display: block;
+	margin: auto;
+}
+body {
+	background-image: url(../img/seashore.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+}
+.balancerow {
+	margin-top: 50px;
+}
