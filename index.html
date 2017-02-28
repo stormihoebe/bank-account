@@ -11,74 +11,66 @@
   <body>
     <div class="container-fluid">
       <div class="jumbotron">
-        <h1>Wild-Card Movie Theater & Orphange</h1>
-        <h3>Bad Movies, Bad Times, Bad Kids</h3>
+        <h1>Welcome to Offshore Banking</h1>
       </div>
     </div>
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <div class="panel panel-primary">
+          <div class="panel panel-default">
             <div class="panel-heading">
-              <h3 class="panel-title">Select Your Movie</h3>
+              <h3 class="panel-title">Create Account</h3>
             </div>
             <div class="panel-body">
-              <form id="movieinfo">
+              <form id="createAccount">
                 <div class="form-group">
-                  <label for="">Movie</label>
-                  <select class="form-control" id="movieName">
-                    <option value="Trolls2">Trolls II</option>
-                    <option value="Beethoven">Beethoven</option>
-                    <option value="WolfCop">WolfCop</option>
-                    <option value="TheRoom">The Room</option>
-                    <option value="ManWhoFellToEarth">Man Who Fell to Earth</option>
-                    <option value="TrailerParkOfTerror">Trailer Park of Terror</option>
-                    <option value="ZombieStrippers">Zombie Strippers</option>
-                    <option value="Caligula">Caligula</option>
-                    <option value="DeathBed">Death Bed: The Bed That Eats</option>
-                    <option value="Sharknado">Shaknado</option>
-                    <option value="ThanksKills">Thankskilling</option>
-                  </select>
+                  <label for="name">Name</label>
+                  <input type="text" name="name" id="name" class="form-control">
                 </div>
                 <div class="form-group">
-                  <label for="">Age</label>
-                  <select class="form-control" id="age">
-                    <option value="12 and Under">Under 12</option>
-                    <option value="12 to 17">12-17</option>
-                    <option value="Over 18">18-60</option>
-                    <option value="Senior">60+</option>
-                  </select>
+                  <label for="initialDeposit">Initial Deposit</label>
+                  <input type="number" name="initial" id="initialDeposit" class="form-control">
                 </div>
-                <div class="form-group">
-                  <label for="">Time</label>
-                  <select class="form-control" id="timeOfDay">
-                    <option value="6am">6am</option>
-                    <option value="4am">4am</option>
-                    <option value="9am">9am</option>
-                    <option value="2am">2am</option>
-                  </select>
-                </div>
-                <button type="submit" class="btn btn-success">PURCHASE</button>
+                <button type="submit" name="button" class="btn btn-warning">Create Account</button>
               </form>
             </div>
           </div>
-
-
         </div>
         <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Manage Account</h3>
+            </div>
+            <div class="panel-body">
+              <form id="createAccount">
+                <div class="form-group">
+                  <label for="deposit">Deposit Amount</label>
+                  <input type="number" name="deposit" id="deposit" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="withdrawal">Withdraw</label>
+                  <input type="number" name="withdraw" id="withdraw" class="form-control">
+                </div>
+                <button type="submit" name="button" class="btn btn-warning">submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div><!--row-->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Balance</h3>
+            </div>
+            <div class="panel-body">
+              <div id= "currentBalance">
 
-            <div class="panel panel-primary">
-              <div class="panel-heading">
-                <h3 class="panel-title">Ticket</h3>
-              </div>
-              <div class="panel-body">
-                <div id="result">
               </div>
             </div>
           </div>
         </div>
-
-      </div>
-    </div>
+      </div><!--row-->
+    </div><!--container-->
   </body>
 </html>
